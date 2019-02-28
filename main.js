@@ -41,21 +41,21 @@ var advancedStaggeringAnimation = (function() {
     anime({
       targets: '.stagger-visualizer .dot',
       scale: [
-        {value: .5, easing: 'easeOutSine', duration: 500},
-        {value: .3, easing: 'easeOutSine', duration: 500},
-        {value: 1.2, easing: 'easeOutSine', duration: 500},
+        {value: .5, easing: 'easeOutSine', duration: 800},
+        {value: .3, easing: 'easeOutSine', duration: 600},
+        {value: 1.2, easing: 'easeOutSine', duration: 1200},
         {value: 1, easing: 'easeInOutQuad', duration: 1200}
       ],
       backgroundColor: [
         {value: '#D0FF43', easing: 'easeOutSine', duration: 1200},
-        {value: '#20DDFE', easing: 'easeOutSine', duration: 800},
-        {value: '#2C2C4C', easing: 'easeOutSine', duration: 800},
-        {value: '#FF2D50', easing: 'easeOutSine', duration: 1200},
+        {value: '#20DDFE', easing: 'easeOutSine', duration: 1200},
+        {value: '#2C2C4C', easing: 'easeOutSine', duration: 1600},
+        {value: '#FF2D50', easing: 'easeOutSine', duration: 1800},
       ],
       borderRadius: [
-        {value: '50%', easing: 'easeOutSine', duration: 1000},
-        {value: '80%', easing: 'easeOutSine', duration: 1000},
-        {value: 0, easing: 'easeOutSine', duration: 1800},
+        {value: '50%', easing: 'easeOutSine', duration: 1200},
+        {value: '80%', easing: 'easeOutSine', duration: 1800},
+        {value: 0, easing: 'easeOutSine', duration: 2000},
       ],
       delay: anime.stagger(200, {grid: grid, from: 'center'}),
       complete: play
@@ -64,10 +64,10 @@ var advancedStaggeringAnimation = (function() {
     anime({
       targets: '.stagger-visualizer',
       backgroundColor: [
-        {value: '#20DDFE', easing: 'easeOutSine', duration: 800},
-        {value: '#2C2C4C', easing: 'easeOutSine', duration: 800},
-        {value: '#FF2D50', easing: 'easeOutSine', duration: 600},
-        {value: '#161622', easing: 'easeOutSine', duration: 600},
+        {value: '#20DDFE', easing: 'easeOutSine', duration: 1200},
+        {value: '#2C2C4C', easing: 'easeOutSine', duration: 1600},
+        {value: '#FF2D50', easing: 'easeOutSine', duration: 1800},
+        {value: '#161622', easing: 'easeOutSine', duration: 1000},
       ],
     })
   }
