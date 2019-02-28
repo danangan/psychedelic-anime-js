@@ -1,0 +1,43 @@
+html,
+body {
+  background-color: #161622;
+  color: #252423;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow:hidden;
+}
+
+.stagger-visualizer {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transform-origin: left top;
+}
+
+.stagger-visualizer .dots-wrapper {
+  transform: translateZ(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.stagger-visualizer .dot {
+  position: relative;
+  z-index: 1;
+  width: 5%;
+  height: 10%;
+  background-color: #FF2D50;
+}
